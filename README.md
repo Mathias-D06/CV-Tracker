@@ -18,7 +18,7 @@ Science at Aston University to practise server-side web development with a relat
 
 ## Tech stack
 
-PHP 8 (PDO) · MySQL / MariaDB · HTML · CSS · XAMPP for local development
+PHP (PDO) · MySQL / MariaDB · HTML · CSS · XAMPP for local development
 
 ## Security notes
 
