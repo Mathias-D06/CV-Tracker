@@ -14,7 +14,7 @@ $cvs = $rows->fetchAll();
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
         <title>AstonCV - Home</title>
         </head>
@@ -28,10 +28,10 @@ $cvs = $rows->fetchAll();
             <ul>
                 <?php foreach ($cvs as $row): ?>
                 <li>
-                    <strong>Id:</strong> <?= $row["id"] ?> <br>
-                    <strong>Name:</strong> <a href="cvdetails.php?id=<?= $row["id"] ?>"><?= $row["name"] ?></a> <br>
-                    <strong>Email:</strong> <?= $row["email"] ?> <br>
-                    <strong>Key Programming:</strong> <?= $row["keyprogramming"] ?>
+                    <strong>Id:</strong> <?= htmlspecialchars($row["id"] ?? "") ?> <br>
+                    <strong>Name:</strong> <a href="cvdetails.php?id=<?= htmlspecialchars($row["id"] ?? "") ?>"><?= htmlspecialchars($row["name"] ?? "") ?></a> <br>
+                    <strong>Email:</strong> <?= htmlspecialchars($row["email"] ?? "") ?> <br>
+                    <strong>Key Programming:</strong> <?= htmlspecialchars($row["keyprogramming"] ?? "") ?>
                 </li>
                 <hr> <?php endforeach; ?>
             </ul>
