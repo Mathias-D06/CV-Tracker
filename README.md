@@ -59,4 +59,3 @@ css/style.css     styling
 
 - CSRF tokens on the forms, and session ID regeneration after login
 - Server-side validation of the links field and length limits on the text fields
-- Pagination for the directory
