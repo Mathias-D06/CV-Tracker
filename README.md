@@ -59,3 +59,11 @@ css/style.css     styling
 
 - CSRF tokens on the forms, and session ID regeneration after login
 - Server-side validation of the links field and length limits on the text fields
+
+## Use of AI
+
+The application itself (registration, login, search, the CV pages and the styling) is my own work.
+Claude (Anthropic's AI assistant) wrote this README and helped prepare the repository for publishing.
+It moved the database credentials into a git-ignored `config.php` (adding `config.example.php`),
+added `schema.sql`, and made two small fixes: the stylesheet path, and escaping user data before it
+is shown on the page. Those changes are in their own commits in the history.
